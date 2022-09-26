@@ -1,0 +1,26 @@
+{
+  "name": "name",
+  "version": "0.0.0",
+  "private": true,
+  "author": "se030.kim@gmail.com",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.2",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "imports": {
+    "#root/*.mjs": "./*.mjs",
+    "#config/*.mjs": "./config/*.mjs",
+    "#api/*.mjs": "./api/*.mjs"
+  }
+}
