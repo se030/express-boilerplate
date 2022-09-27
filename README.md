@@ -14,6 +14,19 @@ express-generator 프로젝트 기반으로 FE, BE 각각을 구성
 
 <br />
 
+**`.env`**
+
+```bash
+# client/.env
+PORT=(client port)
+
+# server/config/.env
+PORT=(server port)
+CLIENT=(client origin, http://localhost:[client port] during development)
+```
+
+<br />
+
 ### client
 
 `/src` 디렉토리에 CSR 등 클라이언트 쪽에서 일어나야 할 동작 구현
