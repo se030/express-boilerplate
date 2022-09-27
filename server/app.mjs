@@ -3,6 +3,7 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import CORS from '#middleware/CORS.mjs';
 
 import userRouter from '#api/user/controller.mjs';
 
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(path.resolve(), 'public')));
 
+CORS(app);
 app.use('/user', userRouter);
 
 // catch 404 and forward to error handler

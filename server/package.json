@@ -21,6 +21,7 @@
   "imports": {
     "#root/*.mjs": "./*.mjs",
     "#config/*.mjs": "./config/*.mjs",
-    "#api/*.mjs": "./api/*.mjs"
+    "#api/*.mjs": "./api/*.mjs",
+    "#middleware/*.mjs": "./middleware/*.mjs"
   }
 }
