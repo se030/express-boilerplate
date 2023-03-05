@@ -4,6 +4,6 @@ import path from 'path';
 dotenv.config({ path: `${path.resolve()}/config/.env` });
 
 export default {
-  port: process.env.PORT,
-  client: process.env.CLIENT
+  PORT: process.env.PORT,
+  CLIENT_PATH: process.env.CLIENT_PATH
 };
